@@ -1,0 +1,594 @@
+#include<iostream.h>
+#include<conio.h>
+#include<fstream.h>
+#include<string.h>
+#include<process.h>
+#include<stdio.h>
+class eyeproblems
+{       public:
+	unsigned char remi1[200],remi2[200];
+	int dno1;
+	char dname1[20];
+	void get1()
+	{       cout<<"Enter disease no:";
+		cin>>dno1;
+		cout<<endl<<endl;
+		cout<<"Enter disease name:";
+		cin>>dname1;
+		cout<<endl<<endl;
+		cout<<"Enter remedies for        "<<dname1<<endl;
+		cout<<"REMEDY 1: ";
+		gets(remi1);
+		cout<<endl;
+		cout<<"REMEDY 2:";
+		gets(remi2);
+	 }
+	void disp1()
+	{
+	cout<<"        "<<dname1<<endl;
+	cout<<"REMEDIES :"<<endl<<endl;
+	cout<<"REMEDY 1:"<<remi1<<endl<<endl;
+	cout<<"REMEDY 2:"<<remi2<<endl<<endl;
+	}
+	int dn1()
+	{
+	return dno1;
+	}
+	void conjunctivits()
+	{       cout<<"Here are some doctors who are specialist in treating conjuctivitis:";
+		cout<<endl<<endl<<endl;
+		cout<<" DOCTORS                               PHONE -NUMBER"<<endl<<endl;
+		cout<<"Dr.Ravikumar                  -           9486933099"<<endl<<endl;
+		cout<<"Dr.ShwetaAthashwar       -           9488963064"<<endl<<endl;
+		cout<<"Dr.RadhiMalar                 -           9954556890"<<endl<<endl;
+		cout<<"Dr.Atheshwar Das            -           9496364998"<<endl<<endl;
+		cout<<"Dr.SusanMarthandan        -           9486306499"<<endl<<endl;
+	}
+	void catracts()
+	{       cout<<"Here are some doctors who are specialist in treating  cataracts:";
+		cout<<endl<<endl<<endl;
+		cout<<" DOCTORS                                 PHONE -NUMBER"<<endl<<endl;
+		cout<<"Dr.V.C.Parthasarathy              -             9777968370 "<<endl<<endl;
+		cout<<"Dr.C.V.Shahchankara              -          8917373232"<<endl<<endl; 
+		cout<<"Dr.AshokRangarajan                -          9497899188"<<endl<<endl;
+		cout<<"Dr.N.R.Rangaraj                       -          9597748495"<<endl<<endl;
+		cout<<"Dr.Rajendran                            -          9086967935"<<endl<<endl;
+	}
+	void nightblindness()
+	{       cout<<"Here are some doctors who are specialist in treating nightblindness:";
+		cout<<endl<<endl<<endl;
+		cout<<" DOCTORS                                  PHONE -NUMBER"<<endl<<endl;
+		cout<<"Dr.Manoj Khatri                       -           8632803346"<<endl<<endl;
+		cout<<"Dr.SridharBharathan                 -           9789312147"<<endl<<endl;
+		cout<<"Dr.AshokRangarajan                 -           7717412133"<<endl<<endl;
+		cout<<"Dr.Sapna Kishore mardi            -           9637828136"<<endl<<endl;
+		cout<<"Dr.C.Parthasarathy                    -           8332044152"<<endl<<endl;
+	}
+	}e;
+class Mentaldisorder
+{
+	public:
+	int dno2;
+	char dname2[20];
+	unsigned char remi3[50],remi4[50];
+	void get2()
+	{
+	cout<<"Enter disease number";
+	cin>>dno2;
+	cout<<endl<<endl;
+	cout<<"Enter disease name";
+	cin>>dname2;
+	cout<<endl;
+	cout<<"Enter remedies for      "<<dname2<<endl<<endl;
+	cout<<"REMEDY 1";
+	gets(remi3);
+	cout<<endl;
+	cout<<"REMEDY 2";
+	gets(remi4);
+	cout<<endl;
+	}
+	void disp2()
+	{
+	cout<<"                   "<<dname2<<endl;
+	cout<<"REMEDIES :"<<endl<<endl;
+	cout<<"REMEDY 1:"<<remi3<<endl<<endl;
+	cout<<"REMEDY 2:"<<remi4<<endl<<endl;
+	}
+	int dn2()
+	{
+	return dno2;
+	}
+	void  depression()
+	{       cout<<"Here are some doctors who are specialist in treating depression:" ;
+		cout<<endl<<endl<<endl;
+		cout<<" DOCTORS                                  PHONE -NUMBER"<<endl<<endl;
+		cout<<"Dr.S.Nambi                      -             7032636910"<<endl<<endl;
+		cout<<"Dr.AnandhaBalan            -             9455683789"<<endl<<endl;
+		cout<<"Dr.MohanaBala               -             9789385675"<<endl<<endl;
+		cout<<"Dr.Badhra                        -             8963784268"<<endl<<endl;
+		cout<<"Dr.Latha Janaki               -             9115475287"<<endl<<endl;
+	}
+	void anxiety()
+	{       cout<<"Here are some doctors who are specialist in treating anxiety:";
+		cout<<endl<<endl<<endl;
+		cout<<" DOCTORS                                  PHONE -NUMBER"<<endl<<endl;
+		cout<<"Dr.Sathyamoorthy             -             8800255533"<<endl<<endl;
+		cout<<"Dr.Sagarmantry                 -             9587111235"<<endl<<endl;
+		cout<<"Dr AmritSandhanam         -             9789336849"<<endl<<endl;
+		cout<<"Dr.Chellapillai                   -             7479324570"<<endl<<endl;
+		cout<<"Dr.Mano                            -             9489368937"<<endl<<endl;
+	}
+	void bipocarddisorder()
+	{       cout<<"Here are some doctors who are specialist in treating bipocarddisorder:";
+		cout<<endl<<endl<<endl;
+		cout<<" DOCTORS                                  PHONE -NUMBER"<<endl<<endl;
+		cout<<"Dr.Sathyamoorthi               -          8632803846"<<endl<<endl;
+		cout<<"Dr.SridharBarathan              -          9789312147"<<endl<<endl;
+		cout<<"Dr.AshokRangarajan            -          7717412133"<<endl<<endl;
+		cout<<"Dr.Sapna Kishore Mardi      -          9637828136"<<endl<<endl;
+		cout<<"Dr.C.Parthasarathy               -          8332044152"<<endl<<endl;
+	 }
+}m;
+class skin
+{       int dno3;
+	char dname3[20];
+	unsigned char remi5[200],remi6[200];
+	public:
+	void get3()
+	{ cout<<"Enter disease number";
+	cin>>dno3;
+	cout<<endl<<endl;
+	cout<<"Enter disease name";
+	cin>>dname3;
+	cout<<endl<<endl;
+	cout<<"Enter remedies for        "<<dname3<<endl;
+	cout<<"REMEDY 1";
+	gets(remi5);
+	cout<<endl;
+	cout<<"REMEDY 2";
+	gets(remi6);
+	cout<<endl;
+	}
+	void disp3()
+	{
+	cout<<"                  "<<dname3<<endl;
+	cout<<"REMEDIES :"<<endl<<endl;
+	cout<<"REMEDY 1:"<<remi5<<endl<<endl;
+	cout<<"REMEDY 2:"<<remi6<<endl<<endl;
+	}
+	int dn3()
+	{
+	return dno3;
+	}
+	void acne()
+	{       cout<<"Here are some doctors who are specialist in treating acne:";
+		cout<<endl<<endl<<endl;
+		cout<<" DOCTORS                                  PHONE -NUMBER"<<endl<<endl;
+		cout<<"Dr.Thaj                            -            8632803846"<<endl<<endl;
+		cout<<"Dr.KiranKattcar               -            9789312147"<<endl<<endl;
+		cout<<"Dr.Bhaves Acharya          -            7717412133"<<endl<<endl;
+		cout<<"Dr.Jagat Shah                   -            9637828136"<<endl<<endl;
+		cout<<"Dr.Prabha Acharya          -            8332044152"<<endl<<endl;
+	}
+	void dryskin()
+	{       cout<<"Here are some doctors who are specialist in treating dry skin:";
+		cout<<endl<<endl<<endl;
+		cout<<" DOCTORS                                  PHONE -NUMBER"<<endl<<endl;
+		cout<<"Dr.Parthasarathy  Roy           -          9354697099"<<endl<<endl;
+		cout<<"Dr.Juvida                               -          9443479609"<<endl<<endl;
+		cout<<"Dr.Harish Prasad                   -          9976247044"<<endl<<endl;
+		cout<<"Dr.Asmita                      -          9488494099"<<endl<<endl;
+		cout<<"Dr.Sahana                      -          9488025834"<<endl<<endl;
+	}
+	void wrinkles()
+	{       cout<<"Here are some doctors who are specialist in treating wrinkles:";
+		cout<<endl<<endl<<endl;
+		cout<<" DOCTORS                                  PHONE -NUMBER"<<endl<<endl;
+		cout<<"Dr.LipyGuptha             -               8980306488"<<endl<<endl;
+		cout<<"Dr.Geetika                    -               8900469991"<<endl<<endl;
+		cout<<"Dr.Shruti                       -               9844434691"<<endl<<endl;
+		cout<<"Dr.SyedNazim              -               9977224704"<<endl<<endl;
+		cout<<"Dr.AmanSharma           -               9863687981"<<endl<<endl;
+	 }
+	 }s;
+	 class respiratorytract
+	{
+	int dno4;
+	char dname4[20];
+	unsigned char remi7[200],remi8[200];
+	public:
+	void get4()
+	{ cout<<"Enter disease number   ";
+	cin>>dno4;
+	cout<<endl<<endl;
+	cout<<"Enter disease name";
+	cin>>dname4;
+	cout<<endl;
+	cout<<"Enter remedies for      "<<dname4<<endl<<endl<<endl;
+	cout<<"REMEDY 1";
+	gets(remi7);
+	cout<<endl;
+	cout<<"REMEDY 2";
+	gets(remi8);
+	cout<<endl;
+	}
+	void disp4()
+	{
+	cout<<"               "<<dname4<<endl;
+	cout<<"REMEDIES :"<<endl<<endl;
+	cout<<"REMEDY 1:"<<remi7<<endl<<endl;
+	cout<<"REMEDY 2:"<<remi8<<endl<<endl;
+	}
+	int dn4()
+	{
+	return dno4;
+	}
+	void asthma()
+	{
+	cout<<"Here are some clinics which are specialist in treating asthma:";
+	cout<<endl<<endl<<endl;
+	cout<<" CLINICS                                            PHONE -NUMBER"<<endl<<endl;
+	cout<<" Chennai chest center                 -                9152957045"<<endl<<endl;
+	cout<<"SubbuLeelaPulmo Care             -                7845501546"<<endl<<endl;
+	cout<<"Gleneaglesglobal                       -                9152706073"<<endl<<endl;
+	cout<<"Amrita Homeopathic Clinic       -                9152316746"<<endl<<endl;
+	cout<<"Mithra Nature Care                 -                9152949318"<<endl<<endl;
+	 }
+	void pneumonia()
+       {
+	cout<<"Here are some clinics which are specialist in treating pneumonia:";
+	cout<<endl<<endl<<endl;
+	cout<<" CLINICS                                       PHONE -NUMBER"<<endl<<endl;
+	cout<<"Mayo Clinic-Phoenix                  -               8779491408"<<endl<<endl;
+	cout<<"Cleveland Clinic                          -               7419575108"<<endl<<endl;
+	cout<<"UCSF Medical Center                 -               8157686764"<<endl<<endl;
+	cout<<"Cedars Sinai Medical Center      -               9004851865"<<endl<<endl;
+	cout<<"Massachusetts GH                      -               9211442696"<<endl<<endl;
+	}
+       void sinus()
+       {
+	cout<<"Here are some clinics which are specialist in treating sinus:";
+	cout<<endl<<endl<<endl;
+	cout<<" CLINICS                                            PHONE -NUMBER"<<endl<<endl;
+	cout<<"Sri Raghavendra Hospital            -                04425966416"<<endl<<endl;
+	cout<<"Helios ENT clinic                        -                9152434520"<<endl<<endl;
+	cout<<"Avuva Alternative Medicine        -                9152176512"<<endl<<endl;
+	cout<<"VaithyaPrathma Nature Care       -                9445905615"<<endl<<endl;
+	cout<<"Positive  Homeopathy                  -                9152332036"<<endl<<endl;
+       }
+       }r;
+       class heart
+       {
+int dno5;
+	char dname5[25];
+	unsigned char remi9[200],remi10[200];
+	public:
+	void get5()
+	{ cout<<"Enter disease number     ";
+	cin>>dno5;
+	cout<<endl<<endl;
+	cout<<"Enter disease name";
+	cin>>dname5;
+	cout<<endl<<endl;
+	cout<<"Enter remedies for    "<<dname5<<endl<<endl;
+	cout<<"REMEDY 1";
+	gets(remi9);
+	cout<<endl;
+	cout<<"REMEDY 2";
+	gets(remi10);
+	cout<<endl;
+	}
+	void disp5()
+	{
+	cout<<"               "<<dname5<<endl;
+	cout<<"REMEDIES :"<<endl<<endl;
+	cout<<"REMEDY 1:"<<remi9<<endl<<endl;
+	cout<<"REMEDY 2:"<<remi10<<endl<<endl;
+	}
+	int dn5()
+	{
+	return dno5;
+	}
+	void cardiomyopathy()
+	{
+	cout<<"Here are some doctors who are specialist in treating cardiomyopathy:";
+	cout<<endl<<endl<<endl;
+	cout<<" DOCTORS                                            PHONE -NUMBER"<<endl<<endl;
+	cout<<" Dr.Muhammad                       -                9189607432"<<endl<<endl;
+	cout<<" Dr.Randip Rai                         -                9867345602"<<endl<<endl;
+	cout<<" Dr.Akshaiya                            -                9486421970"<<endl<<endl;
+	cout<<" Dr.Aashi Singh                        -                9442696131"<<endl<<endl;
+	cout<<" Dr.SiddarthNiham                   -                9486456768"<<endl<<endl;
+	 }
+	 void coronaryheartdisease()
+	 {
+	cout<<"Here are some doctors who are specialist in treating coronary heart disease:";
+	cout<<endl<<endl<<endl;
+	cout<<" DOCTORS                                           PHONE -NUMBER"<<endl<<endl;
+	cout<<" Dr.RezaArasanjani                   -                9873478574"<<endl<<endl;
+	cout<<" Dr.Courtney.E.Bennett             -                9815732163"<<endl<<endl;
+	cout<<" Dr.Patricia                                 -                9143527251"<<endl<<endl;
+	cout<<" Dr.Lori.A.Blauwet                    -                8099551234"<<endl<<endl;
+	cout<<" Dr.Crystal.R.Bonnichsen          -                9857676789"<<endl<<endl;
+	 }
+	void heartattack()
+	{
+	cout<<"Here are some doctors who are specialist in treating heart attack:";
+	cout<<endl<<endl<<endl;
+	cout<<" DOCTORS                                            PHONE -NUMBER"<<endl<<endl;
+	cout<<" Dr.Frank.B.Brozobich              -                8475560975"<<endl<<endl;
+	cout<<" Dr.Charles.J.Bruice                  -                7757589754"<<endl<<endl;
+	cout<<" Dr.Lynn.A.Brunelle                 -                9666769865"<<endl<<endl;
+	cout<<" Dr.Allison                         -                8767564774"<<endl<<endl;
+	cout<<" Dr.Michael                        -                9057885790"<<endl<<endl;
+	 }
+	 }h;
+void basics()
+{
+	int age;
+	  char gender;
+	cout<<"Enter your age :";
+	cin>>age;
+	cout<<endl;
+	cout<<"Enter your gender (m/f/t) :";
+	cin>>gender;
+
+	cout<<endl;
+}
+void main()
+{       clrscr();
+	intx,z;
+	char ch='y',name[25];
+	for(int k=0;k<5;k++)
+	cout<<endl;
+	cout<<"                          WELCOME TO AVA HOSPITALITY             "<<endl;
+	for(int l=0;l<3;l++)
+	cout<<endl;
+	cout<<"kindly fill the following informations"<<endl<<endl;
+	cout<<"Your sweet name:" ;
+	gets(name);
+	cout<<endl;
+	if(strcmp("ava",name)==0)
+	{
+	while(ch=='y')
+	{
+
+	cout<<"Choose the disease"<<endl;
+	cout<<"1.Eye Problems"<<endl;
+	cout<<"2.Mental Disorders"<<endl;
+	cout<<"3.Skin Problems"<<endl;
+	cout<<"4.Respiratory Problems"<<endl;
+	cout<<"5.Heart Problems"<<endl;
+	cout<<"Enter the serial number of your problem mentioned here";
+	cin>>x;
+	if(x==1)
+	{
+	fstream f1;
+	 f1.open("Eye.dat",ios::out);
+	 while (ch=='y')
+	{
+	e.get1();
+	f1.write((char*)&e,sizeof(e));
+	cout<<"Do you want to continue";
+	cin>>ch;
+	}
+	f1.close();
+	}
+       else if(x==2)
+	{
+	fstream f2;
+	f2.open("mental.dat",ios::out);
+	while (ch=='y')
+       {
+	m.get2();
+	f2.write((char*)&m,sizeof(m));
+	cout<<"Do you want to continue";
+	cin>>ch;
+       }
+       f2.close();
+       }
+       else if(x==3)
+       {
+fstream f3;
+       f3.open("Skin.dat",ios::out);
+       while (ch=='y')
+       {
+	s.get3();
+	f3.write((char*)&s,sizeof(s));
+	cout<<"Do you want to continue";
+	cin>>ch;
+       }
+       f3.close();
+       }
+       else if(x==4)
+       {
+fstream f4;
+       f4.open("Respiratorytract.dat",ios::out);
+       while (ch=='y')
+      {
+	r.get4();
+	f4.write((char*)&r,sizeof(r));
+	cout<<"Do you want to continue";
+	cin>>ch;
+      }
+      f4.close();
+      }
+      else if(x==5)
+      {
+fstream f9;
+      f9.open("Heart.dat",ios::out);
+      while(ch=='y')
+      {
+	h.get5();
+	f9.write((char*)&h,sizeof(h));
+	cout<<"Do you want to continue";
+	cin>>ch;
+      }
+      f9.close();
+      }
+cout<<"do u want to continue";
+cin>>ch;
+      }
+      }
+	else
+	{
+	basics();
+	ch='y';
+	while(ch=='y')
+	{
+	clrscr();
+	cout<<"kindly choose your problem"<<endl<<endl;
+	cout<<"1.Eye Problems"<<endl<<endl;
+	cout<<"2.Mental Disorders"<<endl<<endl;
+	cout<<"3.Skin Problems"<<endl<<endl;
+	cout<<"4.Respiratory Problems"<<endl<<endl;
+	cout<<"5.Heart Problems"<<endl<<endl<<endl;
+	cout<<"Enter the serial number of your problem mentioned here     ";
+	cin>>x;
+	if(x==1)
+	{
+	clrscr();
+	cout<<"kindly choose your exact problem"<<endl<<endl;
+	cout<<"1.Conjuctivities"<<endl<<endl;
+	cout<<"2.Cataracts"<<endl<<endl;
+	cout<<"3.Night blindness"<<endl<<endl;
+	cout<<"Enter the serial number of your problem mentioned here     "<<endl<<endl;
+	cin>>z;
+	fstream f5;
+	 f5.open("Eye.dat",ios::in);
+	 while(f5.read((char *)&e,sizeof(e)))
+	 if(z==e.dn1())
+	 e.disp1();
+	 switch(z)
+	 {
+	 case 1:e.conjunctivits();
+		break;
+	 case 2:e.catracts();
+		break;
+	 case 3:e.nightblindness();
+		break;
+	default:cout<<"please enter correct values";
+		 break;
+	      }
+	       f5.close();
+	       }
+	     else if (x==2)
+	     {
+	clrscr();
+	cout<<"kindly choose your exact problem"<<endl<<endl;
+	cout<<"1.Depression"<<endl<<endl;
+	cout<<"2.Anxiety"<<endl<<endl;
+	cout<<"3.Bipolar disorder"<<endl<<endl;
+	cout<<"Enter the serial number of your problem mentioned here    "<<endl<<endl;
+	cin>>z;
+	fstream f6;
+	     f6.open("mental.dat",ios::in);
+	     while(f6.read((char *)&m,sizeof(m)))
+	     if(z==m.dn2())
+	     m.disp2();
+	     switch(z)
+	    {
+		case 1:m.depression();
+		       break;
+		case 2:m.anxiety();
+		       break;
+		case 3:m.bipocarddisorder();
+		       break;
+		default:cout<<"please enter correct values";
+			      break;
+	    }
+	    f6.close();
+	    }
+	    else if(x==3)
+	    {
+	clrscr();
+	cout<<"kindly choose your exact problem"<<endl<<endl;
+	cout<<"1.Acne"<<endl<<endl;
+	cout<<"2.Dry skin"<<endl<<endl;
+	cout<<"3.Wrinkles"<<endl<<endl;
+	cout<<"Enter the serial number of your problem mentioned here    "<<endl<<endl;
+	cin>>z;
+	fstream f7;
+	    f7.open("Skin.dat",ios::in);
+	    while(f7.read((char*)&s,sizeof(s)))
+	    if(z==s.dn3())
+	    s.disp3();
+	    switch(z)
+	    {
+		case 1:s.acne();
+		       break;
+		case 2:s.dryskin();
+		       break;
+		case 3:s.wrinkles();
+		       break;
+		default:cout<<"please enter correct values";
+			      break;
+	    }
+	    f7.close();
+	    }
+	    else if(x==4)
+	    {
+		clrscr();
+		cout<<"kindly choose your exact problem"<<endl<<endl;
+		cout<<"1.Asthma"<<endl<<endl;
+		cout<<"2.Pnemonia"<<endl<<endl;
+		cout<<"3.Sinus"<<endl<<endl;
+		cout<<"Enter the serial number of your problem mentioned here    "<<endl<<endl;
+		cin>>z;
+		fstream f8;
+		f8.open("Respiratorytract.dat",ios::in);
+		while(f8.read((char*)&r,sizeof(r)))
+		if(z==r.dn4())
+		r.disp4();
+		switch(z)
+		{
+		case 1:r.asthma();
+		       break;
+		case 2:r.pneumonia();
+		       break;
+		case 3:r.sinus();
+		       break;
+		default:cout<<"please enter correct values";
+		       break;
+	     }
+	     f8.close();
+	     }
+	    else if(x==5)
+	    {
+		clrscr();
+		cout<<"kindly choose your exact problem"<<endl<<endl;
+		cout<<"1.Cardio Myopathy"<<endl<<endl;
+		cout<<"2.Coronary Heart Disease"<<endl<<endl;
+		cout<<"3.Heart Attack"<<endl<<endl;
+		cout<<"Enter the serial number of your problem mentioned here   "<<endl<<endl;
+		cin>>z;
+		fstream f10;
+		f10.open("Heart.dat",ios::in);
+		while(f10.read((char *)&h,sizeof(h)))
+		if(z==h.dn5())
+		h.disp5();
+	      switch(z)
+	      {
+		case 1:h.cardiomyopathy();
+		       break;
+		case 2:h.coronaryheartdisease();
+		       break;
+		case 3:h.heartattack();
+		       break;
+		default:cout<<"please enter correct values";
+			break;
+	      }
+	     f10.close();
+	     }
+	cout<<"DO YOU WANT TO CONTINUE:   ";
+	cin>>ch;
+	     }
+	clrscr();
+	     for(int j=0;j<12;j++)
+	cout<<endl;
+	cout<<"                     THANKYOU FOR VISTING OUR AVA HOSPITALITY";
+	cout<<endl<<endl<<endl;
+	getch();
+	     exit(0);
+	     }
+	     }
